@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A73BB35F-F00E-444D-BACB-3AFF314D09D6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Exercicios_Apostila_1</RootNamespace>
+    <AssemblyName>Exercicios_Apostila_1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exercicios_Apostila\Balanco_Trimestral\CalculaBalanco.cs" />
+    <Compile Include="Exercicios_Apostila\Exercicios_Sintaxe\Exercicio_01\ImprimirNumeros.cs" />
+    <Compile Include="Exercicios_Apostila\Exercicios_Sintaxe\Exercicio_02\SomaAteMil.cs" />
+    <Compile Include="Exercicios_Apostila\Exercicios_Sintaxe\Exercicio_03\MultiplosDeTres.cs" />
+    <Compile Include="Exercicios_Apostila\Exercicios_Sintaxe\Exercicio_04\Fibonacci.cs" />
+    <Compile Include="Exercicios_Apostila\Exercicios_Sintaxe\Exercicio_05\ImprimirVariavelMod.cs" />
+    <Compile Include="Exercicio_01\VolumeCaixa.cs" />
+    <Compile Include="Exercicio_02\ConversaoTemperatura.cs" />
+    <Compile Include="Exercicio_03\VolumeCilindro.cs" />
+    <Compile Include="Exercicio_04\CriacaoCoelhos.cs" />
+    <Compile Include="Exercicio_05\ConsumoVeiculo.cs" />
+    <Compile Include="Exercicio_06\QuadradoDaDiferenca.cs" />
+    <Compile Include="Exercicio_07\VolumeEsfera.cs" />
+    <Compile Include="Exercicio_08\ConvertCelsiusToFahrenheit.cs" />
+    <Compile Include="Exercicio_09\SalarioVendedor.cs" />
+    <Compile Include="Exercicio_10\VolumeLataOleo.cs" />
+    <Compile Include="Exercicio_11\MediaHarmonica.cs" />
+    <Compile Include="Exercicio_12\MediaPonderada.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
