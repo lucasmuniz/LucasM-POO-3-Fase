@@ -16,7 +16,7 @@ namespace Lista_1_POO.Exercicios_Apostila.Exercicios_Sintaxe.Exercicio_05
                     • O programa deve então jogar o valor de y em x e continuar até que y
                     tenha o valor final de 1. Por exemplo, para x = 13, a saída será:
                     40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1*/
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
             Console.WriteLine("--- Variável X imprime Y conforme MOD ---\n");
             Console.Write("Digite a variável: ");

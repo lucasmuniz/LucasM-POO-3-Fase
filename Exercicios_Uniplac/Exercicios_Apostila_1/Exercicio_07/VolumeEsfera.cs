@@ -27,7 +27,7 @@ namespace Lista_1_POO.Exercicio_07
                     Console.WriteLine("\n\nDigite qualquer tecla para continuar...\n\n");
                     Console.ReadKey();
                 }
-                catch (Exception e)
+                catch (Exception )
                 {
                     Console.WriteLine("Foi digitado um valor inválido!");
                     Console.WriteLine("\n\nDigite qualquer tecla para continuar...\n\n");

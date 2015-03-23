@@ -36,7 +36,7 @@ namespace Lista_1_POO.Exercicio_03
                     Console.WriteLine("\n\nDigite qualquer tecla para continuar...\n\n");
                     Console.ReadKey();
                 }
-                catch (Exception e)
+                catch (Exception )
                 {
                     Console.WriteLine("Voce digitou alguma coisa errada!");
                     Console.WriteLine("\n\nDigite qualquer tecla para continuar...\n\n");

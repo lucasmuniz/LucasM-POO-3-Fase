@@ -26,7 +26,7 @@ namespace Lista_1_POO.Exercicio_04
                     Console.WriteLine("\n\nDigite qualquer tecla para continuar...\n\n");
                     Console.ReadKey();
                 }
-                catch (Exception e)
+                catch (Exception )
                 {
                     Console.WriteLine("Foi digitado um valor incorreto!");
                     Console.WriteLine("\n\nDigite qualquer tecla para continuar...\n\n");

@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Lista_1_POO.Exercicio_08
+namespace Exercicios_Apostila_1.Exercicio_08
 {
     public class ConvertCelsiusToFahrenheit
     {
@@ -28,7 +24,7 @@ namespace Lista_1_POO.Exercicio_08
                     Console.WriteLine("\n\nDigite qualquer tecla para continuar...");
                     Console.ReadKey();
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     Console.WriteLine("Foi digitado um valor inválido!");
                     Console.WriteLine("\n\nDigite qualquer tecla para continuar...");
