@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A73BB35F-F00E-444D-BACB-3AFF314D09D6}</ProjectGuid>
+    <ProjectGuid>{5818BD84-72FF-4B11-819E-0D783DE4C877}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Exercicios_Apostila_1</RootNamespace>
-    <AssemblyName>Exercicios_Apostila_1</AssemblyName>
+    <RootNamespace>Exercicios_Apostila_2</RootNamespace>
+    <AssemblyName>Exercicios_Apostila_2</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,33 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exercicios_Apostila\Balanco_Trimestral\CalculaBalanco.cs" />
-    <Compile Include="Exercicios_Apostila\Exercicios_Sintaxe\Exercicio_01\ImprimirNumeros.cs" />
-    <Compile Include="Exercicios_Apostila\Exercicios_Sintaxe\Exercicio_02\SomaAteMil.cs" />
-    <Compile Include="Exercicios_Apostila\Exercicios_Sintaxe\Exercicio_03\MultiplosDeTres.cs" />
-    <Compile Include="Exercicios_Apostila\Exercicios_Sintaxe\Exercicio_04\Fibonacci.cs" />
-    <Compile Include="Exercicios_Apostila\Exercicios_Sintaxe\Exercicio_05\ImprimirVariavelMod.cs" />
-    <Compile Include="Exercicios_Extras\Robo_Basico\Robo.cs" />
-    <Compile Include="Exercicios_Extras\Robo_Estruturada\Robo.cs" />
-    <Compile Include="Exercicios_Extras\Robo_POO\Robo.cs" />
-    <Compile Include="Exercicio_01\VolumeCaixa.cs" />
-    <Compile Include="Exercicio_02\ConversaoTemperatura.cs" />
-    <Compile Include="Exercicio_03\VolumeCilindro.cs" />
-    <Compile Include="Exercicio_04\CriacaoCoelhos.cs" />
-    <Compile Include="Exercicio_05\ConsumoVeiculo.cs" />
-    <Compile Include="Exercicio_06\QuadradoDaDiferenca.cs" />
-    <Compile Include="Exercicio_07\VolumeEsfera.cs" />
-    <Compile Include="Exercicio_08\ConvertCelsiusToFahrenheit.cs" />
-    <Compile Include="Exercicio_09\SalarioVendedor.cs" />
-    <Compile Include="Exercicio_10\VolumeLataOleo.cs" />
-    <Compile Include="Exercicio_11\MediaHarmonica.cs" />
-    <Compile Include="Exercicio_12\MediaPonderada.cs" />
+    <Compile Include="Desafios\Fibonacci.cs" />
+    <Compile Include="Desafios\Principal.cs" />
+    <Compile Include="Exercicio_01\Funcionario.cs" />
+    <Compile Include="Exercicio_01\Principal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
