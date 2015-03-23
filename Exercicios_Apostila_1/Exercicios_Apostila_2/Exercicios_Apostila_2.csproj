@@ -45,6 +45,13 @@
     <Compile Include="Desafios\Principal.cs" />
     <Compile Include="Exercicio_01\Funcionario.cs" />
     <Compile Include="Exercicio_01\Principal.cs" />
+    <Compile Include="Fixando_Conhecimento\Exercicio_01\Pessoa.cs" />
+    <Compile Include="Fixando_Conhecimento\Exercicio_01\Principal.cs" />
+    <Compile Include="Fixando_Conhecimento\Exercicio_02\Porta.cs" />
+    <Compile Include="Fixando_Conhecimento\Exercicio_02\Principal.cs" />
+    <Compile Include="Fixando_Conhecimento\Exercicio_03\Casa.cs" />
+    <Compile Include="Fixando_Conhecimento\Exercicio_03\Porta.cs" />
+    <Compile Include="Fixando_Conhecimento\Exercicio_03\Principal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

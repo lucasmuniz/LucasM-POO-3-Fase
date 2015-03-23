@@ -22,16 +22,25 @@ namespace Exercicios_Apostila_2.Exercicio_01
 
         public bool EhFuncionario { get; set; }
 
-        public  double BonificaSalario(double salarioFuncionario, double bonificacao)
+        public double BonificaSalario(double salarioFuncionario, double bonificacao)
         {
             Salario = salarioFuncionario + bonificacao;
             return Salario;
+        }
+
+        public void MostraDados()
+        {
+            Console.WriteLine("Nome: {0}", this.Nome);
+            Console.WriteLine("RG: {0}", this.RgFuncionario);
+            Console.WriteLine("Salário: {0}", this.Salario);
+            Console.WriteLine("Data de entrada: {0}", this.DataEntradaNoBanco);
+            Console.WriteLine("Está trabalhando: {0}", this.EstaNaEmpresa);
+            Console.WriteLine("É funionário: {0}", this.EhFuncionario);
         }
 
         public void Demite()
         {
             EhFuncionario = false;
         }
-
     }
 }

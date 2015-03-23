@@ -27,9 +27,11 @@ namespace Exercicios_Apostila_2.Exercicio_01
         public static void Main1(String[] args)
         {
             InformaDadosDoFuncionario(F1);
-            MostraDados(F1);
-            //InformaDadosDoFuncionario(F2);
-            //MostraDados(F2);
+            F1.MostraDados();
+
+            InformaDadosDoFuncionario(F2);
+            F2.MostraDados();
+
             F2 = F1;
             CompararDoisObjetos(F2, F2);
 
@@ -40,17 +42,6 @@ namespace Exercicios_Apostila_2.Exercicio_01
         {
             Console.WriteLine(F1 == F2 ? "Funcionário 1 e Funcionário 2 são iguais!" : "São diferentes!");
         }
-
-        private static void MostraDados(Funcionario f)
-        {
-            Console.WriteLine("Nome: {0}", f.Nome);
-            Console.WriteLine("RG: {0}", f.RgFuncionario);
-            Console.WriteLine("Salário: {0}", f.Salario);
-            Console.WriteLine("Data de entrada: {0}", f.DataEntradaNoBanco);
-            Console.WriteLine("Está trabalhando: {0}", f.EstaNaEmpresa);
-            Console.WriteLine("É funionário: {0}", f.EhFuncionario);
-        }
-
         private static void InformaDadosDoFuncionario(Funcionario f)
         {
             Console.WriteLine("Digite o nome do funcionário: ");

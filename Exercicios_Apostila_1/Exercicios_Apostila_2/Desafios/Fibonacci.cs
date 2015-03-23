@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,15 +11,7 @@ namespace Exercicios_Apostila_2.Desafios
     {
         public int CalculaFibonacci(int n)
         {
-            var a = 0;
-            var b = 1;
-            for (int i = 0; i <= n; i++)
-            {
-                int temp = a;
-                a = b;
-                b = temp + b;
-            }
-            return a;
+            return n == 1 || n == 2 ? 1 : CalculaFibonacci(n - 1) + CalculaFibonacci(n - 2);
         }
     }
 }

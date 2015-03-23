@@ -8,10 +8,10 @@ namespace Exercicios_Apostila_2.Desafios
 {
     public class Principal
     {
-        public static void Main(String[] args)
+        public static void Main1(String[] args)
         {
             var fibo = new Fibonacci();
-            var i=fibo.CalculaFibonacci(5);
+            var i=fibo.CalculaFibonacci(6);
             Console.WriteLine(i);
 
             Console.ReadKey();
