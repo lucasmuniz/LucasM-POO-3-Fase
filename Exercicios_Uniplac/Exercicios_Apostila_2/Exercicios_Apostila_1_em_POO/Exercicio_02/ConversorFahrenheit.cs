@@ -6,25 +6,23 @@ using System.Threading.Tasks;
 
 namespace Exercicios_Apostila_2.Exercicios_Apostila_1_em_POO.Exercicio_02
 {
-    public class Converte
+    public class ConversorFahrenheit
     {
         public double TemperaturaF { get; set; }
 
-        public double TemperaturaC { get; set; }
-
-        public Converte(double temperaturaF)
+        public ConversorFahrenheit(double temperaturaF)
         {
             TemperaturaF = temperaturaF;
         }
 
-        public void ConverteTemperatura()
+        public double ConverteTemperatura()
         {
-            TemperaturaC = ((TemperaturaF - 32) * 5 / 9);
+            return ((TemperaturaF - 32) * 5 / 9);
         }
 
         public void MostrarTemperatura()
         {
-            Console.WriteLine("Temperatura convertida: {0}", TemperaturaC);
+            Console.WriteLine("Temperatura convertida: {0}", ConverteTemperatura());
         }
     }
 }

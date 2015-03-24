@@ -15,7 +15,7 @@ namespace Exercicios_Apostila_2.Exercicios_Apostila_1_em_POO.Exercicio_06
 
         public static void Main1(String[] args)
         {
-            var conversao = new Conversao(20);
+            var conversao = new ConversorDeCelcius(20);
             conversao.ConverteTemperatura();
             conversao.MostraConversao();
 

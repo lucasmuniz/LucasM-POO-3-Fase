@@ -6,25 +6,23 @@ using System.Threading.Tasks;
 
 namespace Exercicios_Apostila_2.Exercicios_Apostila_1_em_POO.Exercicio_06
 {
-    public class Conversao
+    public class ConversorDeCelcius
     {
-        public double TemperaturaF { get; set; }
-
         public double TemperaturaC { get; set; }
 
-        public Conversao(double temperaturaC)
+        public ConversorDeCelcius(double temperaturaC)
         {
             TemperaturaC = temperaturaC;
         }
 
-        public void ConverteTemperatura()
+        public double ConverteTemperatura()
         {
-            TemperaturaF = (((9 * TemperaturaC) + 160) / 5);
+            return (((9 * TemperaturaC) + 160) / 5);
         }
 
         public void MostraConversao()
         {
-            Console.WriteLine("Temperatura em F: {0}", TemperaturaF);
+            Console.WriteLine("Temperatura em F: {0}", ConverteTemperatura());
         }
     }
 }

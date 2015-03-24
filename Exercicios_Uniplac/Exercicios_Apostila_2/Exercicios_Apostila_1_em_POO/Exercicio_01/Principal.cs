@@ -14,7 +14,7 @@ namespace Exercicios_Apostila_2.Exercicios_Apostila_1_em_POO.Exercicio_01
 
         public static void Main1(String[] args)
         {
-            var caixa1= new Caixa(12,20,40,10);
+            var caixa1= new Caixa(20,40,10);
             caixa1.CalculaVolume();
             caixa1.MostraVolume();
 

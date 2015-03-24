@@ -15,7 +15,7 @@ namespace Exercicios_Apostila_2.Exercicios_Apostila_1_em_POO.Exercicio_02
 
         public static void Main1(String[] args)
         {
-            var converte = new Converte(30);
+            var converte = new ConversorFahrenheit(30);
             converte.ConverteTemperatura();
             converte.MostrarTemperatura();
 

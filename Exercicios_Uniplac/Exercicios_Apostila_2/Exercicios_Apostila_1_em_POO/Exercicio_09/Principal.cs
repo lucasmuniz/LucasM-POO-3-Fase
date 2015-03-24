@@ -14,7 +14,7 @@ namespace Exercicios_Apostila_2.Exercicios_Apostila_1_em_POO.Exercicio_09
 
         public static void Main1(String[] args)
         {
-            var media = new MediaHarmonicaAluno(10, 8, 9, 10);
+            var media = new Aluno(10, 8, 9, 10);
             media.CalculaMediaHarmonica();
             media.MostrarMedia();
 

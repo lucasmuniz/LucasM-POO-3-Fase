@@ -14,8 +14,6 @@ namespace Exercicios_Apostila_2.Exercicios_Apostila_1_em_POO.Exercicio_07
 
         public double PorcentualGanho { get; set; }
 
-        public double SalarioTotal { get; set; }
-
         public Vendedor(double salarioFixo, int totalVendas, double porcentualGanho)
         {
             SalarioFixo = salarioFixo;
@@ -23,14 +21,14 @@ namespace Exercicios_Apostila_2.Exercicios_Apostila_1_em_POO.Exercicio_07
             PorcentualGanho = porcentualGanho;
         }
 
-        public void CalcularSalario()
+        public double CalcularSalario()
         {
-            SalarioTotal = (SalarioFixo + (TotalVendas * (PorcentualGanho / 100)));
+            return (SalarioFixo + (TotalVendas * (PorcentualGanho / 100)));
         }
 
         public void MostraSalario()
         {
-            Console.WriteLine("Salario Total: {0}",SalarioTotal);
+            Console.WriteLine("Salario Total: {0}",CalcularSalario());
         }
     }
 }

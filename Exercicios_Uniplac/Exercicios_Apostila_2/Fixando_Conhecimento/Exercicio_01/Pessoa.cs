@@ -18,14 +18,14 @@ namespace Exercicios_Apostila_2.Fixando_Conhecimento.Exercicio_01
             Idade = idade;
         }
 
-        public void FezAniversario()
+        public int FezAniversario()
         {
-            Idade += 1;
+            return Idade += 1;
         }
 
         public void MostraIdade()
         {
-            string output = String.Format("Idade: {0}", Idade);
+            string output = String.Format("Idade: {0}", FezAniversario());
             Console.WriteLine(output);
         }
     }

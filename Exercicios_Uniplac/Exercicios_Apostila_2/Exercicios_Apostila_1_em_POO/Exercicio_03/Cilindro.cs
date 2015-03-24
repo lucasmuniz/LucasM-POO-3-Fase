@@ -8,38 +8,31 @@ namespace Exercicios_Apostila_2.Exercicios_Apostila_1_em_POO.Exercicio_03
 {
     public class Cilindro
     {
-        public double Pi { get; set; }
-
         public double Raio { get; set; }
 
         public double Altura { get; set; }
 
-        public double AreaB { get; set; }
-
-        public double Volume { get; set; }
-
-        public Cilindro(double altura,double raio)
+        public Cilindro(double altura, double raio)
         {
             Raio = raio;
             Altura = altura;
-            Pi = 3.14;
         }
 
-        public void CalcularAreaCilindro()
+        public double CalcularAreaCilindro()
         {
             Raio = Math.Pow(Raio, 2);
-            AreaB = Pi*Raio;
+            return Math.PI * Raio;
         }
 
-        public void CalcularVolumeCilindro()
+        public double CalcularVolumeCilindro()
         {
-            Volume = (AreaB * Altura);
+            return (CalcularAreaCilindro() * Altura);
         }
 
         public void MostraAreaEVolume()
         {
-            Console.WriteLine("Área: {0}", AreaB);
-            Console.WriteLine("Volume: {0}", Volume);
+            Console.WriteLine("Área: {0}", CalcularAreaCilindro());
+            Console.WriteLine("Volume: {0}", CalcularVolumeCilindro());
         }
     }
 }

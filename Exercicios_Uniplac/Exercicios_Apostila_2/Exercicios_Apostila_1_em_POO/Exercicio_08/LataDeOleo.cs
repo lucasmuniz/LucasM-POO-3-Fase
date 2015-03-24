@@ -11,21 +11,20 @@ namespace Exercicios_Apostila_2.Exercicios_Apostila_1_em_POO.Exercicios_08
         public double Raio { get; set; }
         public double Altura { get; set; }
 
-        public double Volume { get; set; }
         public VolumeLataDeOleo(double raio, double altura)
         {
             Raio = raio;
             Altura = altura;
         }
 
-        public void CalcularVolumeDaLata()
+        public double CalcularVolumeDaLata()
         {
-            Volume = ((3.14159*Raio) - (2*Altura));
+           return ((Math.PI*Raio) - (2*Altura));
         }
 
         public void MostrarVolume()
         {
-            Console.WriteLine("Volume: {0}",Volume);
+            Console.WriteLine("Volume: {0}", CalcularVolumeDaLata());
         }
     }
 }

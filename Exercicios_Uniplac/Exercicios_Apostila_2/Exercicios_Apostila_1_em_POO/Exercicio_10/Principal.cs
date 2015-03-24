@@ -15,7 +15,7 @@ namespace Exercicios_Apostila_2.Exercicios_Apostila_1_em_POO.Exercicio_10
 
         public static void Main1(String[] args)
         {
-            var media = new MediaPonderadaAluno(10, 10, 5, 10);
+            var media = new Aluno(10, 10, 5, 10);
             media.CalculaMediaPonderada();
             media.MostrarMediaPonderada();
 

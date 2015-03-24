@@ -8,15 +8,13 @@ namespace Exercicios_Apostila_2.Exercicios_Apostila_1_em_POO.Exercicio_04
 {
     public class Consumo
     {
-        public int Ki { get; set; }
+        public double Ki { get; set; }
 
-        public int Kf { get; set; }
+        public double Kf { get; set; }
 
-        public int Cc { get; set; }
+        public double Cc { get; set; }
 
-        public int Dp { get; set; }
-
-        public int Gc { get; set; }
+        public double Dp { get; set; }
 
         public Consumo(int ki, int kf, int cc)
         {
@@ -25,15 +23,15 @@ namespace Exercicios_Apostila_2.Exercicios_Apostila_1_em_POO.Exercicio_04
             Cc = cc;
         }
 
-        public void CalculaConsumo()
+        public double CalculaConsumo()
         {
             Dp = (Kf - Ki);
-            Gc = (Dp / Cc);
+            return (Dp/Cc);
         }
 
         public void MostraGastoDeCombustivel()
         {
-            Console.WriteLine("Gasto: {0}", Gc);
+            Console.WriteLine("Gasto: {0}", CalculaConsumo());
         }
     }
 }
