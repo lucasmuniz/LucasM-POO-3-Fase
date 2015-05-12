@@ -8,7 +8,7 @@ namespace Exercicios_Apostila_3.Exercicio_01
 {
    public  class Principal
     {
-       public static void Main(String[] args)
+       public static void Main1(String[] args)
        {
            var empresa = new Empresa();
            empresa.Funcionarios= new Funcionario[10];
